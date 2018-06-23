@@ -96,6 +96,7 @@ header {
 
 .video {
 	background-image: url('../img/content/background-video.jpg');
+	background-size: 100%;
 	text-align: center;
 	padding: 200px 0;
 	> a {
@@ -109,6 +110,49 @@ header {
 		text-transform: uppercase;
 		font-family: 'Roboto', sans-serif;
 		font-weight: 900;
+		}
+	}
+}
+
+.expertise {
+	text-align: center;
+	h2 {
+		text-transform: uppercase;
+		margin-top: 70px;
+		font-family: 'Playfair Display', serif;
+		font-weight: 700;
+		color: #413d4b;
+	}
+	p {
+
+		font-family: 'Playfair Display', serif;
+		font-weight: 400;
+		color: #2f2d35;
+	}
+	hr {
+		width: 50px;
+		border: none;
+		background-color:#c6c4c9;
+		height: 2px;
+		margin-bottom: 50px;
+	}
+	.row {
+		text-align: center;
+		> .col {
+			> img {
+				padding: 35px;
+			}
+			h5 {				
+				font-family: 'Roboto', sans-serif;
+				font-weight: 900;
+			}
+			> p {
+				padding:15px 20px;
+				font-family: 'Roboto', sans-serif;
+				font-weight: 300;
+				font-size: 1.2em;
+				word-spacing: .3em;
+			}
 		}
 	}
 }
@@ -142,6 +186,19 @@ header {
 		> p {
 			text-align: left;
 			text-shadow: 0px 0px 0px rgba(255, 255, 255, .4);
+		}
+	}
+
+	.video {
+		background-size: auto;
+	}
+
+	.expertise {
+		.w-100 {
+			display: none!important;
+		}
+		.col {
+			border: none!important;
 		}
 	}
 }
