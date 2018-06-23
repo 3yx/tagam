@@ -1,2 +1,71 @@
+header {
+  background-image: url("../img/header/background.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+#navbarNav {
+  justify-content: flex-end; }
+  #navbarNav .nav-item {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    transition: .3s;
+    font-size: .8em; }
+    #navbarNav .nav-item:hover {
+      color: #00e0d0; }
+  #navbarNav .active {
+    color: #00e0d0; }
+
+.d-block {
+  width: 40%; }
+
+.carousel-caption {
+  bottom: 30%; }
+  .carousel-caption h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900; }
+  .carousel-caption hr {
+    width: 50px;
+    border: none;
+    background-color: #00e0d0;
+    height: 2px; }
+  .carousel-caption p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300; }
+  .carousel-caption > a {
+    display: inline-block;
+    font-family: 'Hammersmith One', sans-serif;
+    color: #00e0d0;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 10px 15px;
+    margin-top: 20px; }
+
+.carousel-indicators {
+  bottom: 40px; }
+  .carousel-indicators > li {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #bab9bc;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.1); }
+    .carousel-indicators > li:active {
+      background-color: #00e0d0; }
+
+@media (max-width: 766px) {
+  header {
+    background-size: auto; }
+
+  .carousel-indicators {
+    display: none; }
+
+  .carousel-caption {
+    position: static; }
+
+  .d-block {
+    display: none !important; } }
 
 /*# sourceMappingURL=style.css.map */
