@@ -1,7 +1,11 @@
 header {
 	background-image: url('../img/header/background.jpg');
-	background-size: 100%;
+	background-size: 120%;
 	background-repeat: no-repeat;
+}
+
+nav {
+	margin-bottom: 120px;
 }
 
 #navbarNav {
@@ -22,9 +26,13 @@ header {
 	}
 }
 
-.d-block {
-	width: 40%;
+.carousel-item {
+	>.d-block {
+		width: 40%;
+	}
 }
+
+
 
 .carousel-caption {
 	bottom: 30%;
@@ -96,7 +104,7 @@ header {
 
 .video {
 	background-image: url('../img/content/background-video.jpg');
-	background-size: 100%;
+	background-size: 120%;
 	text-align: center;
 	padding: 200px 0;
 	> a {
@@ -127,6 +135,7 @@ header {
 
 		font-family: 'Playfair Display', serif;
 		font-weight: 400;
+		font-size: 1.5rem;
 		color: #2f2d35;
 	}
 	hr {
@@ -137,6 +146,7 @@ header {
 		margin-bottom: 50px;
 	}
 	.row {
+		margin-bottom: 70px;
 		text-align: center;
 		> .col {
 			> img {
@@ -147,7 +157,7 @@ header {
 				font-weight: 900;
 			}
 			> p {
-				padding:15px 20px;
+				padding: 15px 20px;
 				font-family: 'Roboto', sans-serif;
 				font-weight: 300;
 				font-size: 1.2em;
@@ -156,6 +166,71 @@ header {
 		}
 	}
 }
+
+.team {
+	text-align: center;
+	background-image: url('../img/content/background-team.jpg');
+	background-size: 130%;
+	background-repeat: no-repeat;
+	padding-bottom: 40px;
+	h2 {
+		text-transform: uppercase;
+		padding-top: 70px;
+		font-family: 'Playfair Display', serif;
+		font-weight: 700;
+		color: #fff;
+	}
+	p {
+		font-family: 'Playfair Display', serif;
+		font-weight: 400;
+		font-size: 1.5rem;
+		color: #f9f9f9;
+	}
+	hr {
+		width: 50px;
+		border: none;
+		background-color:#655c80;
+		height: 2px;
+		margin-bottom: 50px;
+	}
+	.col {
+		flex-grow: 0;
+		border-color: #7c7790!important;
+		p {
+			margin-top: 15px;
+			margin-bottom: 0;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 900;
+		}
+		span {
+			display: block;
+			margin-top: 2px;
+			margin-bottom: 15px;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 300;
+			color: #fafafa;
+		}
+	}
+	span {
+		display: block;
+		margin-top: 70px;
+		margin-bottom: 30px;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 300;
+		color: #f3f3f3;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 766px) {
 	header {
@@ -199,6 +274,13 @@ header {
 		}
 		.col {
 			border: none!important;
+		}
+	}
+	.team {		
+		background-size: auto;
+		background-color: #0c0a30;
+		.col {
+			margin-bottom: 10px;
 		}
 	}
 }

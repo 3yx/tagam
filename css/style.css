@@ -1,7 +1,10 @@
 header {
   background-image: url("../img/header/background.jpg");
-  background-size: 100%;
+  background-size: 120%;
   background-repeat: no-repeat; }
+
+nav {
+  margin-bottom: 120px; }
 
 #navbarNav {
   justify-content: flex-end; }
@@ -17,7 +20,7 @@ header {
   #navbarNav .active {
     color: #00e0d0; }
 
-.d-block {
+.carousel-item > .d-block {
   width: 40%; }
 
 .carousel-caption {
@@ -72,7 +75,7 @@ header {
 
 .video {
   background-image: url("../img/content/background-video.jpg");
-  background-size: 100%;
+  background-size: 120%;
   text-align: center;
   padding: 200px 0; }
   .video > a {
@@ -97,6 +100,7 @@ header {
   .expertise p {
     font-family: 'Playfair Display', serif;
     font-weight: 400;
+    font-size: 1.5rem;
     color: #2f2d35; }
   .expertise hr {
     width: 50px;
@@ -105,6 +109,7 @@ header {
     height: 2px;
     margin-bottom: 50px; }
   .expertise .row {
+    margin-bottom: 70px;
     text-align: center; }
     .expertise .row > .col > img {
       padding: 35px; }
@@ -117,6 +122,52 @@ header {
       font-weight: 300;
       font-size: 1.2em;
       word-spacing: .3em; }
+
+.team {
+  text-align: center;
+  background-image: url("../img/content/background-team.jpg");
+  background-size: 130%;
+  background-repeat: no-repeat;
+  padding-bottom: 40px; }
+  .team h2 {
+    text-transform: uppercase;
+    padding-top: 70px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #fff; }
+  .team p {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #f9f9f9; }
+  .team hr {
+    width: 50px;
+    border: none;
+    background-color: #655c80;
+    height: 2px;
+    margin-bottom: 50px; }
+  .team .col {
+    flex-grow: 0;
+    border-color: #7c7790 !important; }
+    .team .col p {
+      margin-top: 15px;
+      margin-bottom: 0;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 900; }
+    .team .col span {
+      display: block;
+      margin-top: 2px;
+      margin-bottom: 15px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      color: #fafafa; }
+  .team span {
+    display: block;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #f3f3f3; }
 
 @media (max-width: 766px) {
   header {
@@ -149,6 +200,12 @@ header {
   .expertise .w-100 {
     display: none !important; }
   .expertise .col {
-    border: none !important; } }
+    border: none !important; }
+
+  .team {
+    background-size: auto;
+    background-color: #0c0a30; }
+    .team .col {
+      margin-bottom: 10px; } }
 
 /*# sourceMappingURL=style.css.map */
