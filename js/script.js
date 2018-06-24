@@ -1,10 +1,12 @@
 $(document).ready(function(){
+
+	// кнопка доп загрузки рабочих проектов
 	$('.showMore').click(function(){
 		$(this).fadeOut();
 		$('#loadMore').fadeIn(500);
 	});
 
-
+	// синхро 2х каруселей
 	var $sync1 = $("#sync1"),
 	$sync2 = $("#sync2"),
 	flag = false,
@@ -40,6 +42,15 @@ $(document).ready(function(){
 			$sync1.trigger('to.owl.carousel', [e.item.index, duration, true]);
 			flag = false;
 		}
+	});
+
+	// плавная прокрутка по якорям
+	$(function(){
+		$('a[href^="#"]').click(function(){
+			var target = $(this).attr('href');
+			$('html, body').animate({scrollTop: $(target).offset().top}, 800);//800 - длительность скроллинга в мс
+			return false; 
+		}); 
 	});
 
 });

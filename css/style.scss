@@ -89,9 +89,10 @@ nav {
  	}
 }
 
-.story {
-	.row {		
-		margin: 70px 0;
+#about {
+	padding-top: 70px;
+	>.container {
+		padding-bottom: 70px;
 	}
 }
 	
@@ -126,11 +127,11 @@ nav {
 	}
 }
 
-.expertise {
+#expertise {
+	padding-top: 70px;
 	text-align: center;
 	h2 {
 		text-transform: uppercase;
-		margin-top: 70px;
 		font-family: 'Playfair Display', serif;
 		font-weight: 700;
 		color: #413d4b;
@@ -171,7 +172,7 @@ nav {
 	}
 }
 
-.team {
+#team {
 	text-align: center;
 	background-image: url('../img/content/background-team.jpg');
 	background-size: cover;
@@ -227,8 +228,8 @@ nav {
 	}
 }
 
-.works {
-	margin: 70px 0;
+#works {
+	padding: 70px 0;
 	text-align: center;
 	.row {
 		h2 {
@@ -283,7 +284,7 @@ nav {
 	display: none;
 }
 
-.comments {
+#comments {
 	padding: 70px 0;
 	background-image: url('../img/content/background-comments.jpg');
 	background-size: cover;
@@ -356,7 +357,7 @@ nav {
 	}
 }
 
-.contact {
+#contact {
 	padding: 70px 0;
 }
 
@@ -500,7 +501,7 @@ footer {
 .subscribeForm {
 	color: #fff;
 	input {
-		padding: 10px 0 10px 10px;
+		padding: 10px;
 		background-color: rgba(0,0,0,.1);
 		border: 1px solid #9f98b1;
 		color: #fff;
@@ -579,7 +580,7 @@ footer {
 			text-shadow: 0px 0px 0px rgba(255, 255, 255, .4);
 		}
 	}
-	.expertise {
+	#expertise {
 		.w-100 {
 			display: none!important;
 		}
@@ -587,7 +588,7 @@ footer {
 			border: none!important;
 		}
 	}
-	.team {
+	#team {
 		.col {
 			margin-bottom: 10px;
 		}
