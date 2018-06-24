@@ -128,6 +128,7 @@ nav {
   background-image: url("../img/content/background-team.jpg");
   background-size: 130%;
   background-repeat: no-repeat;
+  background-color: #0c0a30;
   padding-bottom: 40px; }
   .team h2 {
     text-transform: uppercase;
@@ -153,7 +154,8 @@ nav {
       margin-top: 15px;
       margin-bottom: 0;
       font-family: 'Roboto', sans-serif;
-      font-weight: 900; }
+      font-weight: 900;
+      font-size: 1rem; }
     .team .col span {
       display: block;
       margin-top: 2px;
@@ -168,6 +170,49 @@ nav {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: #f3f3f3; }
+
+.works {
+  margin: 70px 0;
+  text-align: center; }
+  .works .row h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #413d4b;
+    margin-bottom: 70px; }
+  .works .row .col-4:last-child {
+    text-align: right; }
+    .works .row .col-4:last-child a {
+      text-decoration: none;
+      color: #413d4b;
+      font-size: 1.2rem;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      color: #413d4b; }
+      .works .row .col-4:last-child a:after {
+        content: url("../img/content/righ.png");
+        position: relative;
+        top: 1px; }
+  .works .row a {
+    display: block; }
+  .works .row span {
+    display: block;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 30%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: .3s; }
+    .works .row span:hover {
+      opacity: 1; }
+  .works .btn {
+    margin-top: 70px; }
+
+#loadMore {
+  display: none; }
 
 @media (max-width: 766px) {
   header {
@@ -203,9 +248,11 @@ nav {
     border: none !important; }
 
   .team {
-    background-size: auto;
-    background-color: #0c0a30; }
+    background-size: auto; }
     .team .col {
       margin-bottom: 10px; } }
+@media (min-width: 1200px) {
+  .container {
+    max-width: 960px; } }
 
 /*# sourceMappingURL=style.css.map */

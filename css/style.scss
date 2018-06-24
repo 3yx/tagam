@@ -172,6 +172,7 @@ nav {
 	background-image: url('../img/content/background-team.jpg');
 	background-size: 130%;
 	background-repeat: no-repeat;
+	background-color: #0c0a30;
 	padding-bottom: 40px;
 	h2 {
 		text-transform: uppercase;
@@ -201,6 +202,7 @@ nav {
 			margin-bottom: 0;
 			font-family: 'Roboto', sans-serif;
 			font-weight: 900;
+			font-size: 1rem;
 		}
 		span {
 			display: block;
@@ -219,6 +221,62 @@ nav {
 		font-weight: 300;
 		color: #f3f3f3;
 	}
+}
+
+.works {
+	margin: 70px 0;
+	text-align: center;
+	.row {
+		h2 {
+			font-family: 'Playfair Display', serif;
+			font-weight: 700;
+			color: #413d4b;
+			margin-bottom: 70px;
+		}
+		.col-4:last-child {
+			text-align: right;
+			a {
+				text-decoration: none;
+				color: #413d4b;
+				font-size: 1.2rem;
+				font-family: 'Roboto', sans-serif;
+				font-weight: 300;
+				color: #413d4b;
+				&:after {
+					content: url('../img/content/righ.png');
+					position: relative;
+					top: 1px;
+
+				}
+			}
+		}
+		a {
+			display: block;
+		}
+		span {
+			display: block;
+			color: #fff;
+			position: absolute;
+			top: 0;
+			left: 0;
+			padding-top: 30%;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,.5);
+			opacity: 0;
+			transition: .3s;
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+	.btn {
+		margin-top: 70px;
+	}
+}
+
+#loadMore {
+	display: none;
 }
 
 
@@ -278,9 +336,14 @@ nav {
 	}
 	.team {		
 		background-size: auto;
-		background-color: #0c0a30;
 		.col {
 			margin-bottom: 10px;
 		}
+	}
+}
+
+@media (min-width: 1200px){
+	.container {
+		max-width: 960px;
 	}
 }
