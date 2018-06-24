@@ -1,3 +1,7 @@
+h2 {
+	font-size: 1.6rem;
+}
+
 header {
 	background-image: url('../img/header/background.jpg');
 	background-size: cover;
@@ -352,6 +356,50 @@ nav {
 	}
 }
 
+.contact {
+	padding: 70px 0;
+}
+
+.form, .client {
+	h2 {
+		font-family: 'Playfair Display', serif;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-bottom: 40px;
+	}
+}
+
+.contactForm {						
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;	
+	input, textarea {
+		padding:15px 20px;
+		display: block;
+		width: 100%;
+		border: 1px solid #e5e5e5;
+		margin-bottom: 20px;
+	}
+	textarea{
+		resize: none;
+	}
+	button {
+		margin-top: 0;
+		padding:5px 30px;
+		background-color: #fff;
+	}
+}
+
+.client {
+	h2 {
+		margin-left: 20px;
+	}
+}
+
+.brand {
+	text-align: center;
+	margin: 20px 0;
+}
+
 
 
 
@@ -412,6 +460,15 @@ nav {
 	.owl-next {
 		bottom: 0;
 		right:30px;
+	}
+
+	.form {
+		text-align: center;
+	}
+
+	.client {
+		text-align: center;
+		margin-top: 30px;
 	}
 	
 }
